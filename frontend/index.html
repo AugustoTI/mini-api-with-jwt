@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja</title>
+  </head>
+  <body>
+    <h2>Lista de games</h2>
+    <ul id="games"></ul>
+
+    <hr />
+
+    <h2>Novo game</h2>
+    <input type="text" name="name" id="name_game" placeholder="Nome do game" />
+    <br />
+    <input type="number" name="price" id="price_game" placeholder="Preço" />
+    <br />
+    <input
+      type="number"
+      name="year"
+      id="year_game"
+      placeholder="Ano de lançamento"
+    />
+    <br />
+    <button onclick="createGame()">Criar</button>
+
+    <hr />
+
+    <h2>Editar game</h2>
+    <input type="text" name="id" id="name_game_id" readonly />
+    <br />
+    <input
+      type="text"
+      name="name"
+      id="name_game_edit"
+      placeholder="Nome do game"
+    />
+    <br />
+    <input
+      type="number"
+      name="price"
+      id="name_price_edit"
+      placeholder="Preço"
+    />
+    <br />
+    <input
+      type="number"
+      name="year"
+      id="name_year_edit"
+      placeholder="Ano de lançamento"
+    />
+    <br />
+    <button onclick="editGame()">Editar</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
